@@ -23,9 +23,17 @@ p {
   text-align: center;
 }
 
+a:hover {
+  color: #aa7afc !important;
+}
+
 .nav-item {
   padding: 7px;
   font-weight: 5px;
+}
+
+.nav-item:hover {
+  color: #aa7afc;
 }
 
 .nav-link {
@@ -125,7 +133,7 @@ html {
 }
 
 a:hover {
-  color: blue;
+  color: #aa7afc;
 }
 
 .bi {
@@ -136,6 +144,8 @@ a:hover {
   height: 375px;
   width: 375px;
   border-radius: 50%;
+  padding: 25px;
+  display: flex;
 }
 
 .title-left {
@@ -145,6 +155,7 @@ a:hover {
 
 .abouttitle {
   font-size: 45px;
+  text-decoration: underline;
 }
 
 #aboutp {
@@ -153,4 +164,16 @@ a:hover {
 
 .navbar-toggler-icon {
   background-image: url(/chat.png);
+}
+
+.abouttext {
+  text-align: center;
+}
+
+.progress-bar {
+  background-color:#aa7afc;
+}
+
+.progress {
+  background-color: black;
 }
