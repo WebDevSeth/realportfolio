@@ -1,0 +1,156 @@
+body {
+  overflow-x: hidden;
+}
+
+.fs-5 {
+  padding-top: 0px;
+  font-weight: 50px;
+  font-family: sans-serif;
+}
+
+.flex-column {
+  position: sticky;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 200px;
+}
+
+.navbar {
+  font-family: sans-serif;
+  font-weight: 25px;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 7px;
+  font-weight: 5px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.about {
+  background-color: white;
+  height: 1200px;
+  font-family: sans-serif;
+  padding-top: 85px;
+}
+
+#lighth3 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+#container-fluid2 {
+  height: 1200px;
+  background-color: white;
+}
+
+.row2 {
+  padding-top: 50px;
+}
+
+#container-fluid3 {
+  height: 1200px;
+  background-color: black;
+}
+
+#container-fluid4 {
+  height: 1200px;
+  background-color: white;
+}
+
+#container-fluid5 {
+  height: 1200px;
+  background-color: black;
+}
+
+#container-fluid6 {
+  height: 1200px;
+  background-color: white;
+}
+
+#darkh3 {
+  color: white;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 75px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #aa7afc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+#myBtn:hover {
+  background-color: #aa7afc;
+}
+
+.bg-black {
+  background-attachment: fixed;
+}
+
+.text-secondary {
+  background-image: url(/1111.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
+  background-position: top;
+}
+
+.px-4 {
+  height: 405px;
+}
+
+.about-img {
+  border-radius: 50%;
+  height: 275px;
+  width: 275px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.bi {
+  color: white;
+}
+
+.aboutimg {
+  height: 375px;
+  width: 375px;
+  border-radius: 50%;
+}
+
+.title-left {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.abouttitle {
+  font-size: 45px;
+}
+
+#aboutp {
+  font-size: 18px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(/chat.png);
+}
