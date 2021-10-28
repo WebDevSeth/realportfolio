@@ -45,6 +45,7 @@ a:hover {
   height: 1200px;
   font-family: sans-serif;
   padding-top: 85px;
+  height: max-content;
 }
 
 #lighth3 {
@@ -53,24 +54,19 @@ a:hover {
 }
 
 #container-fluid2 {
-  
+
   background-color: white;
+
 }
 
 .row2 {
   padding-top: 50px;
 }
 
-#container-fluid3 {
- 
-  background-color: black;
-  
-
-}
 
 
 #container-fluid4 {
- 
+
   background-color: white;
 }
 
@@ -111,23 +107,47 @@ html {
   background-color: #aa7afc;
 }
 
+::-webkit-scrollbar{
+  background-color: silver !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #aa7afc!important;
+}
+
+
 .bg-black {
   background-attachment: fixed;
 }
 
 .text-secondary {
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  background-position: top;
+}
+
+.home {
   background-image: url(/1111.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: black;
-  background-position: top;
+  height: 100vh;
 }
-
 
 .px-4 {
   height: 405px;
 }
+
+@media (max-width: 1400px) {
+  .nav-item {
+    padding-top: 50px;
+  }
+}
+
 
 .about-img {
   border-radius: 50%;
@@ -175,6 +195,9 @@ a:hover {
   text-align: center;
   padding-top: 7px;
   font-weight: bold;
+  animation-name: aboutext;
+  animation-duration: 1.5s;
+  animation-iteration-count: inherit;
 }
 
 .abouttext:hover {
@@ -182,140 +205,126 @@ a:hover {
 }
 
 .progress-bar {
-  background-color:#aa7afc;
+  background-color: #aa7afc;
+  animation-name: progression;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+
+
 }
+
+@keyframes aboutext {
+
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: #aa7afc;
+  }
+
+  100% {
+    color: black;
+  }
+
+}
+
+
+@keyframes progression {
+
+  from {
+    width: 0%;
+
+  }
+
+  to {
+    width: fit-content;
+  }
+
+}
+
+
 
 .progress {
   background-color: black;
   height: 55px;
+  margin: 15px;
+  border-radius: 25px;
 }
 
 
 
-.card-title{
+.card-title {
   font-weight: bold;
   text-align: center;
 }
 
-.btn{
-  background-color:#aa7afc;
+.btn {
+  background-color: #aa7afc;
   color: black;
-border:transparent;
+  border: transparent;
 }
 
-.card-text{
+.card-text {
   text-align: center;
 }
 
 h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
-}
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel {
-	padding: 0 70px;
-}
-.carousel .carousel-item {
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	overflow: hidden;
-	min-height: 290px;
-}
-.carousel .carousel-item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel-control-prev, .carousel-control-next {
-	width: 40px;
-	height: 40px;
-	margin-top: -20px;
-	top: 50%;
-	background: none;
-}
-.carousel-control-prev i, .carousel-control-next i {
-	font-size: 68px;
-	line-height: 42px;
-	position: absolute;
-	display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 12px;
-	height: 12px;
-	margin: 1px 3px;
-	border-radius: 50%;
-	border: none;
-}
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
 }
 
-b{
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #8fbc54;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+
+
+
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+b {
   color: #aa7afc !important;
 }
 
-.carousel-item {padding-top: 65px;}
 
-.col-md-3 {padding-top: 45px;}
+.col-md-3 {
+  padding-top: 45px;
+}
 
 .contacthead {
   padding-top: 35px;
   font-size: 35px;
+  margin: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .btn-primary {
   margin-top: 15px;
-  
+
 }
 
 .bi-github {
@@ -323,11 +332,11 @@ b{
 }
 
 .bi-discord {
-  color:black;
+  color: black;
 }
 
 .bi-linkedin {
-  color:black;
+  color: black;
 }
 
 .context {
@@ -350,27 +359,93 @@ b{
 
 
 .col-lg-4 {
-  padding:50px;
- 
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+
+
 }
 
 .card {
-  border: 3px solid #aa7afc ;
+  border: 3px solid #aa7afc;
+  width: 305px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+}
+
+#container-fluid3 {
+  background-color: black;
+  margin-top: 150px;
+
 }
 
 .card-img-top {
-  height:225px
+  height: 225px
 }
 
 
-.ab-bottom{
+.ab-bottom {
   color: black;
 }
 
 .row4 {
-  padding:50px
+  padding: 50px;
+
+}
+
+.d-block {
+  width: fit-content;
+}
+
+
+.d-block {
+  height: 450px;
+  width: 450px !important;
+  border-radius: 50%;
+  justify-content: center;
+  margin: auto;
+  display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 65px;
+  width: 65px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+
+}
+
+.cartext {
+  font-size: 12px;
+}
+
+.footicon {
+  justify-content: center;
+  margin: auto;
+  display: block;
+  padding-bottom: 13px;
+
+}
+
+.fa-github {
+  padding-right: 25px;
+}
+
+
+
+.fa-discord {
+  padding-left: 25px;
+
 }
 
 .mb-4 {
-  padding:50px
+  margin-bottom: 0;
+  padding-bottom: 25px;
 }
+
