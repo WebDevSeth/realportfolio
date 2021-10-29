@@ -81,7 +81,7 @@ a:hover {
 }
 
 .footy {
-  padding: 0 !important; 
+  padding: 0 !important;
 }
 
 
@@ -153,7 +153,7 @@ html {
 }
 
 .home {
-  background-image: url(/loho.png);
+  background-image: url(/images/loho-min.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -190,15 +190,13 @@ a:hover {
   height: 275px;
   width: 275px;
   border-radius: 50%;
-  background: rgba( 152, 0, 195, 0.55 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 16.5px );
--webkit-backdrop-filter: blur( 16.5px );
-border-radius: 50%;
+  background: rgba(152, 0, 195, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 50%;
 
 }
-
-
 
 .title-left {
   font-size: 50px;
@@ -445,11 +443,11 @@ body {
   margin: auto;
   display: block;
   border-radius: 50%;
-  background: rgba( 152, 0, 195, 0.55 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 16.5px );
--webkit-backdrop-filter: blur( 16.5px );
-border-radius: 50%;
+  background: rgba(152, 0, 195, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 50%;
 }
 
 .testimonial-text {
@@ -503,7 +501,7 @@ border-radius: 50%;
 }
 
 /* timeline */
- 
+
 .horizontal-timeline .items {
   border-top: 3px solid #e9ecef;
 }
