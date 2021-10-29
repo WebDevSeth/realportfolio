@@ -179,7 +179,7 @@ html {
 }
 
 a:hover {
-  color: #aa7afc;
+  color: #9800c3;
 }
 
 .bi {
@@ -215,7 +215,8 @@ border-radius: 50%;
 }
 
 .navbar-toggler-icon {
-  background-image: url(/chat.png);
+  background-image: url(/list.png);
+
 }
 
 .abouttext {
