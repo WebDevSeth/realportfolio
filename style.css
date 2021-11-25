@@ -16,6 +16,7 @@ p {
   font-family: sans-serif;
   font-weight: 200px;
 }
+
 .container-fluid {
   background-color: black;
 }
@@ -28,13 +29,12 @@ p {
   z-index: 99999;
   position: fixed;
   width: 100vw;
-  padding-bottom: 15px
-
-;
+  padding-bottom: 15px;
 }
 
-#about{
+#about {
   padding-top: 150px;
+  padding-bottom: 0% !important;
 }
 
 a:hover {
@@ -53,14 +53,13 @@ a:hover {
   font-weight: 5px;
 }
 
-.nav-item:hover {
-  color: #ff0000;
-}
+
 
 .nav-link {
   color: white;
   z-index: 88989898;
 }
+
 
 
 .nav-link:focus {
@@ -167,8 +166,8 @@ html {
 }
 
 .aboutpage {
- padding-left: 450px;
-  
+  padding-left: 450px;
+
 }
 
 
@@ -196,17 +195,24 @@ html {
   height: 220px;
 }
 
-@media (max-width: 1400px) {
+
+
+@media (min-width: 1400px) {
   .nav-item {
-    padding-top: 50px;
+    padding-top: 10px;
   }
 }
+
+
 
 
 .about-img {
   border-radius: 50%;
   height: 275px;
   width: 275px;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 a:hover {
@@ -215,8 +221,8 @@ a:hover {
 
 .bi {
   color: white;
- 
-  
+
+
 }
 
 
@@ -236,14 +242,14 @@ a:hover {
   border-radius: 50%;
   margin: 0;
 
-  
+
 
 }
 
 .navbar-brand {
   height: 55px;
   width: 55px;
-  margin: 0 !important; 
+  margin: 0 !important;
 }
 
 .title-left {
@@ -256,19 +262,24 @@ a:hover {
 
 }
 
+.abouttitle2 {
+  font-size: 45px;
+}
+
 #aboutp {
   font-size: 18px;
   text-align: left;
 }
+
 .navmenu {
   height: 45px;
-  width:45px;
+  width: 45px;
 }
 
 .navbar-toggler {
   background-color: red;
 }
-  
+
 
 .abouttext {
   text-align: center;
@@ -285,54 +296,25 @@ a:hover {
 
 .progress-bar {
   background-color: #ff0000;
-  animation-name: progression;
 
 }
-
-@keyframes aboutext {
-
-  0% {
-    color: black;
-  }
-
-  50% {
-    color: #ff0000;
-  }
-
-  100% {
-    color: black;
-  }
-
-}
-
-
-@keyframes progression {
-
-  from {
-    width: 0%;
-
-  }
-
-  to {
-    width: fit-content;
-  }
-
-}
-
 
 
 .progress {
   background-color: black;
-  height: 15px;
+  height: 35px;
   margin: 15px;
-  border-radius: 25px;
+  width: 250px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
 }
 
 
 
 .card-title {
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .btn {
@@ -342,7 +324,8 @@ a:hover {
 }
 
 .card-text {
-  text-align: center;
+  text-align: left;
+  font-size: 15px;
 }
 
 h2 {
@@ -389,19 +372,41 @@ b {
   color: #ff0000 !important;
 }
 
+.bi-file-earmark-arrow-down {
 
+  padding-left: 12px;
+  font-size: 18px;
+}
+
+#yeah {
+  padding-top: 15px!important;
+}
+
+
+.passion {
+  font-family: sans-serif;
+  font-size: 25px;
+  
+}
+
+#passion {
+  padding-left: 0 !important;
+}
 
 .col-md-3 {
   padding-top: 45px;
 }
 
 .contacthead {
-  padding-top: 95px;
+  padding-top: 75px;
   margin: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   font-size: 25px;
- 
+
+  text-align: left;
+  font-size: 45px;
+
 }
 
 .btn-primary {
@@ -458,6 +463,172 @@ body {
   padding-bottom: 115px;
 
 
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline>li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline>li:after {
+  clear: both;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline>li:after {
+  clear: both;
+}
+
+.timeline>li>.timeline-panel {
+  width: 46%;
+  float: left;
+  background: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline>li>.timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline>li>.timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline>li>.timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #ff0000;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+  float: right;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body>p,
+.timeline-body>ul {
+  margin-bottom: 0;
+}
+
+
+.timeline-body>p+p {
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  ul.timeline:before {
+    left: 45px;
+  }
+
+  ul.timeline>li>.timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline>li>.timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+
+  ul.timeline>li>.timeline-panel {
+    float: right;
+  }
+
+  ul.timeline>li>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline>li>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
 }
 
 .card {
@@ -527,11 +698,15 @@ body {
 
 .fa-angle-double-down:hover {
   color: darkred !important;
-
+  paddingbo
 }
 
 .cartext {
-  font-size: 12px;
+  font-size: 15px;
+}
+
+.current {
+  color: #ff0000;
 }
 
 .footicon {
@@ -609,3 +784,35 @@ body {
   height: 55px;
   width: 55px;
 }
+
+@media (min-width: 300px) {
+  .kool {
+    padding-left: 42px !important;
+  }
+
+  .abouttitle {
+    padding-top: 15px;
+    text-align: left;
+
+  }
+
+  .abouttitle2 {
+
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 86px;
+  }
+
+
+
+
+
+
+  .kool {
+
+    margin-top: 75px;
+  }
+
+  .toot {
+    margin-top: 75px;
+  }
