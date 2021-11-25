@@ -16,31 +16,45 @@ p {
   font-family: sans-serif;
   font-weight: 200px;
 }
+.container-fluid {
+  background-color: black;
+}
+
 
 .navbar {
   font-family: sans-serif;
   font-weight: 25px;
   text-align: center;
   z-index: 99999;
+  position: fixed;
+  width: 100vw;
+  padding-bottom: 15px
+
+;
+}
+
+#about{
+  padding-top: 150px;
 }
 
 a:hover {
-  color: #9800c3 !important;
+  color: #ff0000 !important;
 }
 
 @media screen and (max-width:650px) {
   .nav-item {
-    height: 150px;
+    height: 75px;
   }
+
 }
 
 .nav-item {
-  padding: 7px;
+  padding: 4px;
   font-weight: 5px;
 }
 
 .nav-item:hover {
-  color: #9800c3;
+  color: #ff0000;
 }
 
 .nav-link {
@@ -48,11 +62,16 @@ a:hover {
   z-index: 88989898;
 }
 
+
+.nav-link:focus {
+  color: #ff0000;
+  z-index: 88989898;
+}
+
 .about {
   background-color: whitesmoke;
   height: 1200px;
   font-family: sans-serif;
-  padding-top: 85px;
   height: max-content;
 }
 
@@ -71,7 +90,7 @@ a:hover {
   font-size: 50px;
 }
 
-.fa-external-link-alt {
+.fa-globe {
   font-size: 50px;
 }
 
@@ -83,9 +102,6 @@ a:hover {
 .footy {
   padding: 0 !important;
 }
-
-
-
 
 #container-fluid4 {
 
@@ -116,18 +132,19 @@ html {
   bottom: 50px;
   right: 75px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 17px;
   border: none;
   outline: none;
-  background-color: #9800c3;
+  background-color: #ff0000;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 14px;
+  border-radius: 15px;
+  border: solid 2px black;
 }
 
 #myBtn:hover {
-  background-color: #9800c3;
+  background-color: #ff0000;
 }
 
 ::-webkit-scrollbar {
@@ -135,13 +152,26 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9800c3 !important;
+  background-color: #ff0000 !important;
 }
 
 
 .bg-black {
   background-attachment: fixed;
 }
+
+
+
+.nav .current .nav-link {
+  color: #ff0000;
+}
+
+.aboutpage {
+ padding-left: 450px;
+  
+}
+
+
 
 .text-secondary {
 
@@ -153,12 +183,13 @@ html {
 }
 
 .home {
-  background-image: url(/images/loho-min.png);
+  background-image: url("/images/Extra images/hero\ image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: black;
   height: 100vh;
+  background-size: contain;
 }
 
 .px-4 {
@@ -179,11 +210,19 @@ html {
 }
 
 a:hover {
-  color: #9800c3;
+  color: #ff0000;
 }
 
 .bi {
   color: white;
+ 
+  
+}
+
+
+
+.aboutpage {
+  padding-top: 50px;
 }
 
 .aboutimg {
@@ -195,7 +234,16 @@ a:hover {
   backdrop-filter: blur(16.5px);
   -webkit-backdrop-filter: blur(16.5px);
   border-radius: 50%;
+  margin: 0;
 
+  
+
+}
+
+.navbar-brand {
+  height: 55px;
+  width: 55px;
+  margin: 0 !important; 
 }
 
 .title-left {
@@ -205,17 +253,22 @@ a:hover {
 
 .abouttitle {
   font-size: 45px;
-  text-decoration: underline;
+
 }
 
 #aboutp {
   font-size: 18px;
+  text-align: left;
+}
+.navmenu {
+  height: 45px;
+  width:45px;
 }
 
-.navbar-toggler-icon {
-  background-image: url(/images/Untitled\ design-min.png);
-
+.navbar-toggler {
+  background-color: red;
 }
+  
 
 .abouttext {
   text-align: center;
@@ -227,15 +280,12 @@ a:hover {
 }
 
 .abouttext:hover {
-  color: #9800c3;
+  color: #ff0000;
 }
 
 .progress-bar {
-  background-color: #9800c3;
+  background-color: #ff0000;
   animation-name: progression;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-
 
 }
 
@@ -246,7 +296,7 @@ a:hover {
   }
 
   50% {
-    color: #9800c3;
+    color: #ff0000;
   }
 
   100% {
@@ -273,7 +323,7 @@ a:hover {
 
 .progress {
   background-color: black;
-  height: 55px;
+  height: 15px;
   margin: 15px;
   border-radius: 25px;
 }
@@ -286,7 +336,7 @@ a:hover {
 }
 
 .btn {
-  background-color: #9800c3;
+  background-color: #ff0000;
   color: black;
   border: transparent;
 }
@@ -336,8 +386,9 @@ h2::after {
 }
 
 b {
-  color: #9800c3 !important;
+  color: #ff0000 !important;
 }
+
 
 
 .col-md-3 {
@@ -345,11 +396,12 @@ b {
 }
 
 .contacthead {
-  padding-top: 35px;
-  font-size: 35px;
+  padding-top: 95px;
   margin: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+  font-size: 25px;
+ 
 }
 
 .btn-primary {
@@ -387,6 +439,10 @@ body {
   font-weight: bold;
 }
 
+.carousel-inner {
+  padding-bottom: 110px;
+}
+
 .git {
   float: right;
   padding: 6px;
@@ -398,21 +454,25 @@ body {
   padding: 15px;
   display: flex;
   justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 115px;
 
 
 }
 
 .card {
-  border: 4px solid #9800c3;
+  border: 7px solid #ff0000;
   width: 305px;
   ;
   margin-top: 35px;
+  background-color: #ff0000;
   margin-bottom: 35px;
+  border-radius: 9px;
 
 }
 
 #container-fluid3 {
-  background-color: whitesmoke;
+  background-color: black;
 
 
 }
@@ -466,7 +526,7 @@ body {
 }
 
 .fa-angle-double-down:hover {
-  color: whitesmoke !important;
+  color: darkred !important;
 
 }
 
@@ -543,4 +603,9 @@ body {
   .horizontal-timeline .items .items-list .event-date {
     top: -40px;
   }
+}
+
+.sklogo {
+  height: 55px;
+  width: 55px;
 }
